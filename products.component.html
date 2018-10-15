@@ -1,0 +1,43 @@
+<div class="container">
+
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let item of products.productList">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <a href="#">
+              <img [src]=item.ImageUrl alt="" />
+            </a>
+          </div>
+          <div class="col-md-4">
+            <h2>
+              <strong>{{item.Name}}</strong>
+            </h2>
+            <h3>{{item.Description}}</h3>
+          </div>
+          <div class="col-md-2 col-xs-6">
+            <div class="pull-right">
+              <div class="row">
+                <div class="col-md-4">
+                  <button class="btn btn-default bg-light">-</button>
+                </div>
+                <div class="col-md-4" >
+                  <span>{{UserQuanity}}</span>
+                </div>
+                <div class="col-md-4">
+                  <button class="btn btn-default bg-light">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-xs-6">
+            <div class="pull-right">
+              <button>Add Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+</div>
